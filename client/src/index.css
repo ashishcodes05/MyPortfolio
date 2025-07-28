@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  scrollbar-width: thin;
+  scrollbar-color: transparent;
+}
+
+.scrollbar-none {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+
+.gradient {
+  background: linear-gradient(to right, #008baa, #7e42a7, #6600c5, #6070fd, #2a46ff, #0099ff, #008ead);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 10s ease infinite;
+  will-change: background-position;
+}
+
+.gradient2 {
+  background: linear-gradient(to right, #0ff0fc, #4c66ff, #9740ff, #ff46aa, #ff6b6b, #fcb045, #ffec45);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 10s ease infinite;
+  will-change: background-position;
+}
+
+.gradient3 {
+  background: linear-gradient(to right, #00f6ff, #6f00ff, #ff00c8, #ff5f5f, #ffa600, #ffe600, #00ff9d);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 10s ease infinite;
+  will-change: background-position;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
