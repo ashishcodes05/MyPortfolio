@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
-import HeroSection from "./heroSection";
+import HeroSection from "./HeroSection.jsx";
 import About from "./About";
 import Loader from "./Loader";
 import assets from "../assets/assets.js";
 import Skill from "./Skill";
 import CardSection from "./CardSection";
-import ProjectSection from "./ProjectSection.jsx";
-import Form from "./Form.jsx";
-import Footer from "./Footer.jsx";
+import ProjectSection from "./ProjectSection";
+import Form from "./Form";
+import Footer from "./Footer";
 
 const Layout = () => {
   const [isLoaded, setIsLoaded] = useState(false);
