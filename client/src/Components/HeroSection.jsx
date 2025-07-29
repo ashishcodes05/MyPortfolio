@@ -29,7 +29,7 @@ const HeroSection = () => {
       ></video>
       <div className="absolute top-0 w-full flex justify-center -z-1 mix-blend-lighten">
         <video
-          className="video w-full mt-10 md:-mt-[28%]"
+          className="video w-full mt-6 md:-mt-[28%]"
           src={assets.blackhole}
           preload="auto"
           autoPlay
