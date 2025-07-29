@@ -23,6 +23,8 @@ const HeroSection = () => {
         autoPlay
         loop
         muted
+        preload="auto"
+        poster={assets.space}
         playsInline
       ></video>
       <div className="absolute top-0 w-full flex justify-center -z-1 mix-blend-lighten">
@@ -71,7 +73,6 @@ const HeroSection = () => {
           />
         </div>
       </div>
-      
     </div>
   )
 };
