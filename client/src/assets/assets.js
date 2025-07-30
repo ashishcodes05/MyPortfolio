@@ -19,6 +19,7 @@ import mongodb from "./svg/mongodb.svg";
 import express from "./svg/express.svg";
 import gemini from "./svg/googlegemini.svg";
 import databricks from "./svg/databricks.svg";
+import AshishKumarSahu_Resume from "./AshishKumarSahu_Resume.pdf";
 
 const assets = {
   astronaut,
@@ -27,10 +28,13 @@ const assets = {
   galaxy,
   profile,
   space,
+  resume: AshishKumarSahu_Resume,
   projects: [
     {
       title: "MovTick",
       image: MovTick,
+      github: "https://github.com/ashishcodes05/MovTick-The-Fast-Ticket-Booking-Platform",
+      live: "https://movtick.vercel.app/",
       theme: "#E50914",
       description:
         "A movie ticket booking platform that streamlines the process of finding and purchasing tickets for the latest films. Users can browse showtimes, read reviews, and enjoy a seamless checkout experience.",
@@ -48,6 +52,8 @@ const assets = {
     {
       title: "Vistoria",
       image: Vistoria,
+      github: "https://github.com/ashishcodes05/Vistoria-Blogging-Platform",
+      live: "https://vistoriaofficial.vercel.app/",
       theme: "#1770FF",
       description:
         "A full-stack web application that allows users to post and engage with blogs through comments. It features an integrated AI assistant that suggests creative writing ideas, enhancing the blogging experience.",
@@ -62,6 +68,8 @@ const assets = {
     {
       title: "ExpenseTracker",
       image: ExpenseTracker,
+      github: "https://github.com/ashishcodes05/Expense-Tracker",
+      live: "https://fastexpensetracker.netlify.app/",
       theme: "#FF6F00",
       description:
         "A personal finance management tool that helps users track their expenses, set budgets, and gain insights into their spending habits.",
@@ -75,6 +83,8 @@ const assets = {
     {
       title: "InsideTheWorld",
       image: InsideTheWorld,
+      github: "https://github.com/ashishcodes05/CountriesAPI",
+      live: "https://insidetheworld.netlify.app/",
       theme: "#615FFF",
       description:
         "An immersive virtual reality experience that takes users on a journey through the cosmos, exploring distant galaxies and celestial phenomena.",
@@ -88,6 +98,8 @@ const assets = {
     {
       title: "Daily3Goals",
       image: Daily3Goals,
+      github: "https://github.com/ashishcodes05/Daily-3-Goals-Tracker",
+      live: "https://daily3goals.netlify.app/",
       theme: "#48A300",
       description:
         "A productivity application that helps users set and track their daily goals, promoting better time management and focus.",

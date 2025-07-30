@@ -20,7 +20,8 @@ const ProjectSection = () => {
               } flex-col justify-between w-full px-8 mt-6 items-center gap-6 relative`}
             >
               {/* Project Image */}
-              <div
+              <a
+                href={project.live}
                 className="w-[280px] md:w-[460px] flex justify-center border-2 rounded-lg overflow-hidden hover:scale-105 transition-transform duration-300 shadow-lg z-10 cursor-pointer"
                 style={{ borderColor: project.theme,
                   boxShadow: `0 0 20px ${project.theme}`
@@ -31,10 +32,11 @@ const ProjectSection = () => {
                   alt={project.title}
                   className="w-full object-cover h-full"
                 />
-              </div>
+              </a>
 
               {/* Timeline Dot */}
-              <div
+              <a
+                href={project.github}
                 className={`max-md:hidden absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-4 h-4 bg-white border-4 rounded-full hover:scale-125 transition-transform duration-300 cursor-pointer`}
                 style={{
                   borderColor: project.theme,
@@ -57,8 +59,8 @@ const ProjectSection = () => {
                   style={{ color: project.theme }}
                 >
                   {project.title}
-                  <span className="text-gray-400 text-xl cursor-pointer hover:scale-125 transition-all duration-300 hover:text-white"><i className="bx bx-link-external"></i> </span>
-                  <span className="text-gray-400 text-xl cursor-pointer hover:scale-125 transition-all duration-300 hover:text-white"><i className="bx bxl-github"></i></span>
+                  <a href={project.live} className="text-gray-400 text-xl cursor-pointer hover:scale-125 transition-all duration-300 hover:text-white"><i className="bx bx-link-external"></i> </a>
+                  <a href={project.github} className="text-gray-400 text-xl cursor-pointer hover:scale-125 transition-all duration-300 hover:text-white"><i className="bx bxl-github"></i></a>
                 </h2>
                 <p className="text-gray-400 mt-2 px-8 text-start">{project.description}</p>
                 {project.skills && project.skills.length > 0 && (

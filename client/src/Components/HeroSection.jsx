@@ -41,11 +41,21 @@ const HeroSection = () => {
       <div className="fixed inset-0 bg-black opacity-30"></div>
       <Header />
       <div className="absolute right-2 flex flex-col space-y-8 md:space-y-8 z-20 px-4 ">
-        <i className="bx bxl-telegram text-white text-xl md:text-4xl cursor-pointer opacity-80 hover:opacity-100 hover:scale-110 transition-all"></i>
-        <i className="bx bxl-github text-white text-xl md:text-4xl cursor-pointer opacity-80 hover:opacity-100 hover:scale-110 transition-all"></i>
-        <i className="bx bxl-linkedin text-white text-xl md:text-4xl cursor-pointer opacity-80 hover:opacity-100 hover:scale-110 transition-all"></i>
-        <i className="devicon-leetcode-plain text-white text-xl md:text-4xl cursor-pointer opacity-80 hover:opacity-100 hover:scale-110 transition-all"></i>
-        <i className="bx bxl-instagram text-white text-xl md:text-4xl cursor-pointer opacity-80 hover:opacity-100 hover:scale-110 transition-all"></i>
+        <a href="https://telegram.org" target="_blank" rel="noopener noreferrer">
+          <i className="bx bxl-telegram text-white text-xl md:text-4xl cursor-pointer opacity-80 hover:opacity-100 hover:scale-110 transition-all"></i>
+        </a>
+        <a href="https://github.com/ashishcodes05" target="_blank" rel="noopener noreferrer">
+          <i className="bx bxl-github text-white text-xl md:text-4xl cursor-pointer opacity-80 hover:opacity-100 hover:scale-110 transition-all"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ashishcodes05" target="_blank" rel="noopener noreferrer">
+          <i className="bx bxl-linkedin text-white text-xl md:text-4xl cursor-pointer opacity-80 hover:opacity-100 hover:scale-110 transition-all"></i>
+        </a>
+        <a href="https://leetcode.com/u/AshishCodes_IN/" target="_blank" rel="noopener noreferrer">
+          <i className="devicon-leetcode-plain text-white text-xl md:text-4xl cursor-pointer opacity-80 hover:opacity-100 hover:scale-110 transition-all"></i>
+        </a>
+        <a href="https://www.instagram.com/_.ashishverse._/" target="_blank" rel="noopener noreferrer">
+          <i className="bx bxl-instagram text-white text-xl md:text-4xl cursor-pointer opacity-80 hover:opacity-100 hover:scale-110 transition-all"></i>
+        </a>
       </div>
       
       <div className="w-full flex flex-col md:flex-row items-center space-x-8 text-center space-y-4 px-6 z-10">
@@ -60,9 +70,13 @@ const HeroSection = () => {
             I'm a Full Stack web developer committed to crafting clean,
             responsive, functional and impactful web experiences.
           </p>
-          <button className="mt-6 px-6 py-2 font-bold gradient3 border-2 border-[#300CAB] rounded-lg hover:scale-105 transition-transform duration-200 ease-in-out cursor-pointer shadow-sm shadow-[#300CAB] hover:shadow-[#8E56AC]">
+          <a 
+            href={assets.resume} 
+            download="Ashish_Kumar_Sahu_Resume.pdf" 
+            className="mt-6 px-6 py-2 font-bold gradient3 border-2 border-[#300CAB] rounded-lg hover:scale-105 transition-transform duration-200 ease-in-out cursor-pointer shadow-sm shadow-[#300CAB] hover:shadow-[#8E56AC]"
+          >
             Download CV
-          </button>
+          </a>
         </div>
         <div className="mt-8 h-64 w-64 md:w-md md:h-full shadow-lg z-100">
           <img
